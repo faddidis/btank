@@ -1,0 +1,15 @@
+
+*/Build
+*/Binaries
+*/Intermediate
+*/DerivedDataCache
+*/Saved
+BuildingEscape/Content/StarterContent/
+
+
+*.db
+*.suo
+BuildingEscape/.vs/BuildingEscape/FileContentIndex/
+*.ipch
+*.VC.opendb
+*.sln
