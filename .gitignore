@@ -4,12 +4,12 @@
 */Intermediate
 */DerivedDataCache
 */Saved
-BuildingEscape/Content/StarterContent/
+*/StarterContent/
+*/FileContentIndex/
 
-
-*.db
+*.db*
 *.suo
-BuildingEscape/.vs/BuildingEscape/FileContentIndex/
+
 *.ipch
 *.VC.opendb
 *.sln
