@@ -1,0 +1,16 @@
+
+Build
+Binaries
+Intermediate
+DerivedDataCache
+Saved
+StarterContent/
+FileContentIndex/
+
+*.db*
+*.suo
+
+*.ipch
+*.VC.opendb
+*.sln
+BattleTank/Content/StarterContent/
