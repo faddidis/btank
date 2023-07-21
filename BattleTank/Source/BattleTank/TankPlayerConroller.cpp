@@ -17,6 +17,7 @@ void ATankPlayerConroller::BeginPlay()
 	}
 
 }
+
 ATank* ATankPlayerConroller::GetControlledTank() const 
 {
 	return Cast<ATank>(GetPawn());
