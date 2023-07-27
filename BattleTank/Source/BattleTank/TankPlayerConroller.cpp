@@ -53,5 +53,5 @@ void ATankPlayerConroller::AimTowardsCrosshair()
 bool ATankPlayerConroller::GetSightRayLocation(FVector& HitLocation) const
 {
 	HitLocation = FVector(1.0);
-	return false;
+	return true;
 }
