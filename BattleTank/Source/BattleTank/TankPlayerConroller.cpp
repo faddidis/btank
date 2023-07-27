@@ -2,6 +2,8 @@
 
 #include "BattleTank.h"
 #include "TankPlayerConroller.h"
+#define OUT
+
 
 void ATankPlayerConroller::BeginPlay()
 {
@@ -36,8 +38,20 @@ ATank* ATankPlayerConroller::GetControlledTank() const
 void ATankPlayerConroller::AimTowardsCrosshair() 
 {
 	if (!GetControlledTank()) { return; }
-		// Get world location if linetrace thorough crosshair
-		// If it hits the landscape
-				// Tell controled tank to aim at this point
+	
+	FVector  HitLocation; // Out Parameter
+	if(GetSightRayLocation(HitLocation)) // Has "side-effect", is going to line trace
+	{
+		UE_LOG(LogTemp, Warning, TEXT("HitLocation: %s"), *HitLocation.ToString());
 
+				// TODO Tell controled tank to aim at this point)
+	}
+
+}
+
+// Get world location of linetrace thorough crosshair, true if hits the landscape
+bool ATankPlayerConroller::GetSightRayLocation(FVector& HitLocation) const
+{
+	HitLocation = FVector(1.0);
+	return false;
 }
