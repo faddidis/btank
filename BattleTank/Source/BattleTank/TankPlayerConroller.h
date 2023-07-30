@@ -24,13 +24,18 @@ private:
 	// Start the tank moving the barrel so that a shot would it where the crosshair intersects the world;
 	void AimTowardsCrosshair();
 
+
 	// Return an OUT parameter, true if hit landscape
 	bool GetSightRayLocation(FVector& HitLocation) const;
+
+	
 
 	UPROPERTY(EditAnywhere)
 	float CrosshairXLocation = 0.5;
 
 	UPROPERTY(EditAnywhere)
 	float CrosshairYLocation = 0.3333;
+
+	bool GetLookDirection(FVector2D ScreenLocation, FVector& LookDirection) const;
 
 };
